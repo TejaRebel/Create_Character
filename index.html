@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="img1 img2">
+
+    <button id="create-btn">
+        Create Your Character
+    </button>
+
+    <div id="character-input">
+    <form action="">
+        <label for="firstname">First Name</label>
+        <input id="firstname" type="text" placeholder="First Name"> 
+        
+        <br>
+
+        <label for="lastname">Last Name</label>
+        <input id="lastname" type="text" placeholder="Last Name">
+        
+        <br>
+
+        <label for="age">Enter Your Age</label>
+        <input id="age" type="number" placeholder="eg: 26"> 
+        
+        <div id="race">
+            <p style="color: white;">Select Your Race :</p>
+             <select name="" id="race-dropdown">
+                <option value="warrior">Warrior</option>
+                <option value="knight">knight</option>
+                <!-- <option value="saiyan">Saiyan</option> -->
+                <option value="demon">Demon</option>
+                <option value="dragon">Drgaon</option>
+                <option value="evil">Evil Being</option>
+             </select>
+        </div>
+
+        <br>
+        <input id="checkbox" type="checkbox"><label for="agree">Agree To Our Terms And Conditions</label> <br>
+        <p id="fill-details"></p>
+        <button id="submit-character">Create</button>
+    </form>
+    <img src="./media/character/pngegg.png" alt="">
+    </div>
+
+    <div id="character-created">
+      <div id="character-info"> 
+          <h2>Full Name : <span id="fullname"></span></h2>
+          <h2>Age : <span id="age-info"></span></h2>
+          <h2>Race : <span id="race-info"></span></h2>
+          <h4 id="race-details"></h4>
+      </div>
+      <img id="character-img" src="./media/character/pngegg.png" alt="">
+
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
